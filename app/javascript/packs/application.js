@@ -8,9 +8,10 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-
+import 'jquery';
 import "bootstrap";
 import "../stylesheets/application"
+
 
 
 document.addEventListener("turbolinks:load", () => {
