@@ -5,12 +5,12 @@
 
 		<h2 class="alert-heading">
 			<%= pluralize(obj.errors.count, "error") %>
-			prohibited thisobj from being saved:
+			prohibited this user from being saved:
 		</h2>
 		<p><ul>
-				<% obj.errors.full_messages.each do |msg| %>
-				<li> <%= msg %> </li>
-				<% end %>
+			<% obj.errors.full_messages.each do |msg| %>
+			<li> <%= msg %> </li>
+			<% end %>
 			</ul>
 		</p>
 	</div>
