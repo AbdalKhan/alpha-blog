@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
 
+
 	def index
 		@articles = Article.all
 	end
@@ -48,6 +49,7 @@ class ArticlesController < ApplicationController
 		redirect_to articles_path
 
 	end
+	
 private
 	
 	def article_params
