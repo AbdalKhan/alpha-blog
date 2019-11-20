@@ -4,7 +4,7 @@ class UsersController < ApplicationController
 		@users = User.paginate(page: params[:page], per_page: 5)
 	end
 
-	def create
+	def create 
 		@user= User.new(user_params)
 		if @user.save
 			flash[:success] = "Welcome to the alpha blog  #{@user.username}"
