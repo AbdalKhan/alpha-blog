@@ -8,7 +8,11 @@
 				<div class="card-header bg-light">
 					<big>
 					<%= link_to "#{category.name}",category_path(category) %> 
-					</big>
+					</big> </br>
+
+					<small> <%= pluralize(category.articles.count, "article") %> </small>
+
+
 				</div>
 			</div>
 	</div>		
